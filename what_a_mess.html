@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="obj_statue_1" src="./Statue_v1_L2.123cc93d694a-81fb-4c81-8a75-7fa010dfa777/Statue_v1_L2.123cc93d694a-81fb-4c81-8a75-7fa010dfa777/12330_Statue_v1_L2.obj"></a-asset-item>
+        <a-asset-item id="mtl_statue_1" src="./Statue_v1_L2.123cc93d694a-81fb-4c81-8a75-7fa010dfa777/Statue_v1_L2.123cc93d694a-81fb-4c81-8a75-7fa010dfa777/12330_Statue_v1_L2.mtl"></a-asset-item>
+        <a-asset-item id="obj_statue_2" src="./Statue_v1_L2.123ce0579293-53f0-494d-aebb-8a216896421b/Statue_v1_L2.123ce0579293-53f0-494d-aebb-8a216896421b/12328_Statue_v1_L2.obj"></a-asset-item>
+        <a-asset-item id="mtl_statue_2" src="./Statue_v1_L2.123ce0579293-53f0-494d-aebb-8a216896421b/Statue_v1_L2.123ce0579293-53f0-494d-aebb-8a216896421b/12328_Statue_v1_L2.mtl"></a-asset-item>
+        <a-asset-item id="obj_canap" src="./57-couch-obj/couch.obj"></a-asset-item>
+        <a-asset-item id="mtl_canap" src="./57-couch-obj/couch.mtl"></a-asset-item>
+        <a-asset-item id="obj_table" src="./1v2exin3byds-Tabel/Tabel/table.obj"></a-asset-item>
+        <a-asset-item id="mtl_table" src="./1v2exin3byds-Tabel/Tabel/table.mtl"></a-asset-item>
+        <a-asset-item id="obj_plante_1" src="./cim59vrioikg-IndoorPotPlant/IndoorPotPlant/indoor plant_02_obj/indoor plant_02.obj"></a-asset-item>
+        <a-asset-item id="mtl_plante_1" src="./cim59vrioikg-IndoorPotPlant/IndoorPotPlant/indoor plant_02_obj/indoor plant_02.mtl"></a-asset-item>
+        <a-asset-item id="obj_crayon" src="./Pen_v2_L3.123c7a7e09ed-f8dc-4d88-b279-37b29fe26293/Pen_v2_L3.123c7a7e09ed-f8dc-4d88-b279-37b29fe26293/10302_Pen_v2_L3.obj"></a-asset-item>
+        <a-asset-item id="mtl_crayon" src="./Pen_v2_L3.123c7a7e09ed-f8dc-4d88-b279-37b29fe26293/Pen_v2_L3.123c7a7e09ed-f8dc-4d88-b279-37b29fe26293/10302_Pen_v2_L3.mtl"></a-asset-item>
+        <a-asset-item id="obj_tv" src="./31-tv_velha_obj/tv velha.obj"></a-asset-item>
+    </a-assets>
+      <a-entity obj-model="obj:#obj_statue_1; mtl:#mtl_statue_1" position="-1.5 0.4 -1.5" rotation="-90 0 0" scale="0.003 0.003 0.003"></a-entity>
+      <a-entity obj-model="obj:#obj_statue_2; mtl:#mtl_statue_2" position="1.5 0.4 -1.5" rotation="-90 -60 0" scale="0.0065 0.0065 0.0065"></a-entity>
+      <a-entity obj-model="obj:#obj_canap; mtl:#mtl_canap" position="-0.2 0.4 -1.2" rotation="0 0 0" scale="0.0015 0.0012 0.0012"></a-entity>
+      <a-entity obj-model="obj:#obj_table; mtl:#mtl_table" position="0 0.8 1.2" rotation="0 90 0" scale="0.007 0.007 0.007"></a-entity>
+      <a-entity obj-model="obj:#obj_plante_1; mtl:#mtl_plante_1" position="-1.5 0.4 1.5" rotation="0 0 0" scale="0.2 0.2 0.2"></a-entity>
+      <a-entity obj-model="obj:#obj_plante_1; mtl:#mtl_plante_1" position="1.5 0.4 1.5" rotation="0 0 0" scale="0.2 0.2 0.2"></a-entity>
+      <a-entity obj-model="obj:#obj_crayon; mtl:#mtl_crayon" position="0.1 1.2 1" rotation="50 70 0" scale="0.02 0.02 0.02"></a-entity>
+      <a-entity obj-model="obj:#obj_tv" position="0.5 1.4 1.2" rotation="0 200 0" scale="0.0005 0.0005 0.0005" color="#111111"></a-entity>
+      <a-plane position="0 1.2 1" rotation="-90 0 0" width="0.21" height="0.297" src="./feuille.png" color="#DDDDDD"></a-plane>
+      <a-plane position="0 0.41 0" rotation="-90 0 0" width="2" height="2" src="./tapis.png" color="#DDDDDD"></a-plane>
+      <a-plane position="0 0.4 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" src="plafond.png" repeat="5 5"></a-plane>
+      <a-plane position="0 1.4 2" rotation="0 0 0" width="4" height="4" color="#DDDDDD" side="double" src="mur.png"></a-plane>
+      <a-plane position="2 1.4 0" rotation="0 90 0" width="4" height="4" color="#DDDDDD" side="double" src="mur.png"></a-plane>
+      <a-plane position="-2 1.4 0" rotation="0 90 0" width="4" height="4" color="#DDDDDD" side="double" src="mur_encadrement.png" transparent="true"></a-plane>
+      <a-plane position="0 1.4 -2" rotation="0 0 0" width="4" height="4" color="#DDDDDD" src="mur.png"></a-plane>
+      <a-plane position="0 3.4 0" rotation="-90 0 0" width="4" height="4" color="#DDDDDD" side="double" src="plafond.png" repeat="5 5"></a-plane>
+      <a-plane position="0.489 1.405 1.074" rotation="0 200 0" width="0.3" height="0.2" color="#FFFFFF" side="double" src="magnifique.jpg"></a-plane>
+      <a-sky color="#ECECEC" src="ciel.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>

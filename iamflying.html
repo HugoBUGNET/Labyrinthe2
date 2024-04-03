@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+    <script src="https://eminet666.github.io/ensaama/components/detect/detect.js"></script>
+    <script src="https://eminet666.github.io/ensaama/components/debug/debug.js"></script>
+    <!-- <script src="https://eminet666.github.io/ensaama/2023/DNMADE1/projet/fly.js"></script>    -->
+    <script src="./fly.js"></script>
+</head>
+
+<body>
+
+    <a-scene frequency="delay: 500;" renderer="antialias: true"
+    debug-keyboard="key: v,b,n; event: xbuttondown, ybuttondown, abuttondown; target: #lefthand, #lefthand, #righthand">
+
+        <!-- DEBUT -->
+        <a-assets>
+            <img id="sky0" src="./assets/puresky.jpg">
+            <img id="sky1" src="./assets/evening_road_01_puresky_4k.jpg">
+            <img id="sky2" src="./assets/sunflowers_puresky_4k.jpg">
+            <img id="sky3" src="./assets/table_mountain_2_puresky_4k.jpg">
+        </a-assets>
+
+        
+        <!--MY SPACE -->
+        <a-assets>
+            <a-asset-item id="rock_1" src="./assets/antarctic_meteorite_sample_eet_79001312.glb"></a-asset-item>
+            <a-asset-item id="rock_2" src="./assets/antarctic_meteorite_sample_gro_170630.glb"></a-asset-item>
+            <a-asset-item id="rock_3" src="./assets/granite_stone_brown_02.glb"></a-asset-item>
+            <a-asset-item id="plane" src="./assets/mossy_dirty_crashed_plane.glb"></a-asset-item>
+            <a-asset-item id="boat" src="./assets/fishing_boat.glb"></a-asset-item>
+            <a-asset-item id="rod" src="./assets/fishing_rod.glb"></a-asset-item>
+            <a-asset-item id="bridge" src="./assets/rope_bridge.glb"></a-asset-item>
+            <a-asset-item id="fence" src="./assets/rope_fence.glb"></a-asset-item>
+            <a-asset-item id="tree" src="./assets/tree.glb"></a-asset-item>
+            <img id="eau" src="./assets/eau.png">
+            <img id="eau2" src="./assets/eau_trans.png">
+        </a-assets>
+        <a-entity position="0 0 0" scale="15 15 15" rotation="0 0 0" gltf-model="#plane"></a-entity>
+        <a-entity position="-1 1.6 -3" scale="70 70 70" rotation="-26 -33 34" gltf-model="#rock_1"></a-entity>
+        <a-entity position="-6.3 -0.23 -0.5" scale="70 70 70" rotation="64.7 -60 79" gltf-model="#rock_1"></a-entity>
+        <a-entity position="-3.2 -0.57 -3.9" scale="70 70 70" rotation="19.73 -242.2 -51" gltf-model="#rock_1"></a-entity>
+        <a-entity position="0 -1.26 0" scale="70 70 70" rotation="19.73 -242.2 -51" gltf-model="#rock_1"></a-entity>
+        <a-entity position="8.242 -1.26 3.11" scale="70 70 70" rotation="-26 110 29.64" gltf-model="#rock_1"></a-entity>
+        <a-entity position="9.816 -1.26 2.553" scale="70 70 70" rotation="-26 161.75 29.86" gltf-model="#rock_1"></a-entity>
+        <a-entity position="8.174 -1.19 1.41" scale="70 70 70" rotation="-26 -33 28" gltf-model="#rock_1"></a-entity>
+        <a-entity position="7.7 -1.26 3.212" scale="70 70 70" rotation="-26 20 31.2" gltf-model="#rock_1"></a-entity>
+        <a-entity position="9.4 -1.19 1.161" scale="70 70 70" rotation="-26 -114.5 28" gltf-model="#rock_1"></a-entity>
+        <a-entity position="3.688 -1.451 0.221" scale="70 70 70" rotation="-26 -33 34" gltf-model="#rock_1"></a-entity>
+        <a-entity position="-1.467 -0.359 -0.883" scale="70 70 70" rotation="-37.54 -130.8 30" gltf-model="#rock_1"></a-entity>
+        <a-entity position="-5.77 0.69 -3.2" scale="70 70 70" rotation="-36.3 0 25.87" gltf-model="#rock_1"></a-entity>
+        <!-- <a-entity position="-10 1 1" scale="50 50 50" rotation="0 180 0" gltf-model="#rock_2"></a-entity>
+        <a-entity position="-11.088 -41.68 24.7" scale="50 50 50" rotation="0.39 90 -21.44" gltf-model="#rock_3"></a-entity>
+        <a-entity position="-4.971 -6.879 4.456" scale="10 10 10" rotation="0.39 90 -21.44" gltf-model="#rock_3"></a-entity> -->
+        <a-entity position="-1.7 2.2 -2.3" scale="0.003 0.003 0.003" rotation="0 40 0" gltf-model="#plane"></a-entity>
+        <a-entity position="7.5 -0.326 3" scale="1 1 1" rotation="-7.86 -32.7 -5.79" gltf-model="#boat"></a-entity>
+        <a-entity position="6.766 -0.574 3.223" scale="0.0005 0.0005 0.0005" rotation="0 -73.59 5.34" gltf-model="#rod"></a-entity>
+        <a-entity position="-3.295 1.95 -0.75" scale="0.003 0.003 0.003" rotation="0 -90 0" gltf-model="#bridge"></a-entity>
+        <a-entity position="5.64 -0.88 0.493" scale="0.003 0.003 0.003" rotation="4.55 -82.99 0.170" gltf-model="#bridge"></a-entity>
+        <a-entity position="-2 2 -0.5" scale="0.1 0.1 0.1" rotation="0 0 0" gltf-model="#fence"></a-entity>
+        <a-entity position="0.1 2.133 -1.8" scale="0.1 0.1 0.1" rotation="0 85 0" gltf-model="#fence"></a-entity>
+        <a-entity position="-0.144 2.119 -3.742" scale="0.1 0.1 0.1" rotation="0 95 0" gltf-model="#fence"></a-entity>
+        <a-entity position="2.166 -1.028 2.564" scale="0.1 0.1 0.1" rotation="0 -70 0" gltf-model="#fence"></a-entity>
+        <a-entity position="7.843 -0.709 -0.437" scale="0.1 0.1 0.1" rotation="0 -10 0" gltf-model="#fence"></a-entity>
+        <a-entity position="8.817 -0.856 5.808" scale="0.1 0.1 0.1" rotation="0 0 0" gltf-model="#fence"></a-entity>
+        <a-entity position="-0.74 3.62 -10.1" scale="1.2 1.2 1.2" rotation="0 0 0" gltf-model="#tree"></a-entity>
+        <a-entity position="-5 2.275 -11.7" scale="1.2 1.2 1.2" rotation="0 0 0" gltf-model="#tree"></a-entity>
+        <a-entity position="13.2 0.67 -0.3" scale="1.2 1.2 1.2" rotation="0 -47.75 0" gltf-model="#tree"></a-entity>
+        <a-plane position="8.881 -0.576 2.217" rotation="-90 0 0" width="5" height="5" color="#343534" src="#eau2" transparent="true" opacity="20"></a-plane>
+
+
+
+        <!-- PHOTO360 -->
+        <a-sky id="image-360" radius="500" change-sky radius="10" src="#sky0"></a-sky>
+        <!-- FIN -->
+
+        <!-- PLAYER -->
+        <a-entity id="player" position="0 0 0" fly="scalaire: 0.05 0.05 0.05; trace: true">
+            <a-entity id="cam" camera position="0 0.5 0" 
+                currentposition="trace:false" 
+                look-controls wasd-controls="acceleration:10">
+                <a-entity id="lefthand" handposition="trace: false" oculus-touch-controls="hand: left"></a-entity>
+                <a-entity id="righthand" handposition="trace: false" oculus-touch-controls="hand: right" droite></a-entity>
+                <a-text id="txtlog" value="" align="center" color="#0000FF" 
+                    position="0 0 -1" rotation="0 0 0" scale="0.25 0.25 0.25">
+                </a-text>
+            </a-entity>
+        </a-entity>
+
+    </a-scene>
+
+</body>
+
+</html>

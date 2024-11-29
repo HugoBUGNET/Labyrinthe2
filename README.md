@@ -6,6 +6,6 @@
 * [univers_3D inshallah ca passe](./iamflying.html)
 * [univers_3D_mini](./iamflying_mini2.html)
 * [univers_3D_alleeyyyyyeeeez](./iamflying_allez.html)
-* [image360](./skybox.html)
+* [image360](./skybox/skybox.html)
 
 

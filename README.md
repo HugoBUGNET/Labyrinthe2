@@ -7,5 +7,5 @@
 * [univers_3D_mini](./iamflying_mini2.html)
 * [univers_3D_alleeyyyyyeeeez](./iamflying_allez.html)
 * [image360](./skybox/skybox.html)
-* [1href](./Labyrinthe2/AR_ARCADE/3_aframe_ar/1_href_direct.html) 
+* [1href](./AR_ARCADE/3_aframe_ar/1_href_direct.html) 
 

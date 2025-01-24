@@ -10,6 +10,6 @@
 
 
 #### ressources
-* [image marker demo (pattern ratio 0.75)](./assets/demo.png)
-* [pdf marker demo (pattern ratio 0.75)](./assets/demo.pdf)
+* [image marker demo (pattern ratio 0.75)](./assets/BUGNET-SALLES.png)
+* [pdf marker demo (pattern ratio 0.75)](./assets/BUGNET-SALLES.pdf)
 * [qr code generator](https://www.qr-code-generator.com/)
